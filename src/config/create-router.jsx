@@ -1,29 +1,21 @@
 import { createBrowserRouter, redirect } from 'react-router-dom';
+import Layout from './shared/layout';
+import HomePage from '../home/page';
+import FirstPage from './Exercise3/FirstPage';
+import SecondPage from './Exercise3/SecondPage';
 
-import HomePage from '@/home/page';
-import Layout from '@/shared/layout';
-
-export const createRouter = () => {
-  return createBrowserRouter([
+export const createRouter = () =>
+  createBrowserRouter([
     {
       path: '/',
       element: <Layout />,
       children: [
-        {
-          path: '/',
-          element: <HomePage />,
-        },
-        {
-          path: '/dashboard',
-          element: <div>Dashboard Page</div>,
-        },
+        { index: true, element: <HomePage /> },
+        { path: 'first', element: <FirstPage /> },
+        { path: 'second', element: <SecondPage /> },
+        { path: '*', element: <h1>Not Found</h1> },
       ],
     },
-    {
-      path: '*',
-      loader() {
-        return redirect('/');
-      },
-    },
+    // Optional: redirect any top-level non-matching path
+    // { path: "*", loader: () => redirect("/") },
   ]);
-};

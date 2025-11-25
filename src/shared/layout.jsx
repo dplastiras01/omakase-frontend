@@ -1,10 +1,16 @@
-import { Outlet } from 'react-router-dom';
-import styles from './layout.module.css';
+import { Link, Outlet } from 'react-router-dom';
 
 export default function Layout() {
   return (
-    <main className={styles.mainContainer}>
+    <div style={{ padding: 16 }}>
+      <nav style={{ display: 'flex', gap: 12 }}>
+        <Link to='/'>Home</Link>
+        <Link to='/first'>First</Link>
+        <Link to='/second'>Second</Link>
+      </nav>
+      <hr />
       <Outlet />
-    </main>
+    </div>
   );
 }
+  
