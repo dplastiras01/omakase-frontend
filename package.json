@@ -1,0 +1,8 @@
+{
+  "name": "exercise-3",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "node index.js",
+    "test": "jest"
+  }
+}
