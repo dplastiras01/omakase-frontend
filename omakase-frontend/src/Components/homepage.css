@@ -1,0 +1,40 @@
+.ButtonContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50 50px 50px 50px;
+    gap: 70px;
+}
+
+body {
+
+    background-color: #6699cc;
+    width:100vw;
+}
+
+.h1_hp{
+
+    text-align: center;
+    margin-top: 40vh;
+    background-color: palegoldenrod ;
+    margin-bottom: 50px
+}
+
+.hp_button {
+
+    height: 50px;
+    width: auto;
+    background-color: palegoldenrod ;
+}
+
+footer {
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: palegoldenrod ;
+    padding: 1rem;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+    
+}
+

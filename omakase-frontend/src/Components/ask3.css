@@ -1,0 +1,54 @@
+.with-css h1 {
+  background-color: red;
+  text-align: center;
+}
+
+.with-css p {
+  background-color: yellow;
+
+}
+
+.with-css #p2 {
+
+  color: red;
+
+}
+
+.with-css ol {
+
+  background-color: yellow;
+}
+
+.with-css ul {
+
+  background-color: yellow;
+}
+
+.with-css h5 {
+
+  background-color: red;
+  text-align: center;
+}
+
+.with-css #s2d {
+  
+  max-width: 60%;    /* μικρότερο από την αρχική σελίδα */
+  height: auto;
+
+}
+
+.with-css ul {
+  
+  list-style-type:circle;
+
+}
+
+.with-css ol {
+  list-style-type:lower-greek;
+
+}
+
+.with-css pre {
+
+  font-style: italic;
+}
